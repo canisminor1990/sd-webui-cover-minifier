@@ -1,0 +1,13 @@
+{
+  "name": "resize-cover",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "resize-cover": "node resize-cover.js"
+  },
+  "devDependencies": {
+    "rimraf": "^4.4.1",
+    "sharp": "^0.32.0"
+  }
+}
