@@ -4,7 +4,15 @@ a node script to resize all kind of models’ cover to speed up extranetwrok sho
 
 > default output type will change the img type to `webp`
 
-## useage 
+## Install
+
+clone this repo and install deps
+
+```sh
+npm i
+```
+
+## Usage 
 
 change the path and size var in the `resize-cover.js` 
 
