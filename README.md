@@ -1,6 +1,8 @@
 # Stable Diffusion Webui - Resize Cover
 
-a node script to resize all kinds models’ cover to speed up extranetwrok showcase render
+a node script to resize all kind of models’ cover to speed up extranetwrok showcase render
+
+> default output type will change the img type to `webp`
 
 ## useage 
 
