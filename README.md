@@ -1,4 +1,4 @@
-# Stable Diffusion Webui - Resize Cover
+# Extra-Networks Cover Minifier
 
 a simple node script to resize all kind of models’ cover to speed up extranetwrok showcase render
 
