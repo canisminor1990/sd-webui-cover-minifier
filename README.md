@@ -96,8 +96,8 @@ Copyright © 2023 [CanisMinor][profile-url]. <br /> This project is [MIT](./LICE
 
 <!-- release -->
 
-[release-shield]: https://img.shields.io/npm/v/@lobehub/commit-cli?label=%F0%9F%A4%AF%20NPM
-[release-url]: https://www.npmjs.com/package/@lobehub/commit-cli
+[release-shield]: https://img.shields.io/npm/v/sd-webui-cover-minifier?label=✂️%20NPM
+[release-url]: https://www.npmjs.com/package/sd-webui-cover-minifier
 
 <!-- releaseDate -->
 
