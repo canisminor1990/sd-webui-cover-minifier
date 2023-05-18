@@ -50,7 +50,7 @@
     "chalk": "^5.2.0",
     "cliui": "^8",
     "meow": "^12",
-    "rimraf": "^4",
+    "rimraf": "^5",
     "sharp": "^0.32"
   },
   "devDependencies": {
