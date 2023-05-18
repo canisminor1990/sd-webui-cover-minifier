@@ -4,7 +4,7 @@
 
 <h1>✂️ Cover Minifier</h1>
 
-Extra-Networks cover minifier for stable-diffuison webui <br> a simple node script to resize all kind of models’ cover to speed up extranetwrok showcase render
+A CLI minifier tool is available for Extra-Networks to improve the stability of the Diffusion WebUI. <br/>It resizes all types of model covers to accelerate the rendering process for extranetwrok showcase.
 
 <!-- SHIELD GROUP -->
 
