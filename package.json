@@ -1,6 +1,6 @@
 {
   "name": "sd-webui-cover-minifier",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "a simple node script to resize all kind of models’ cover to speed up extranetwrok showcase render",
   "keywords": [
     "stable-diffusion-webui",

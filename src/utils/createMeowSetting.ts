@@ -12,6 +12,7 @@ export default (flagsConst: IFlags) => {
         shortFlag: item[1].shortFlag,
         type: item[1].type,
       };
+      if (!item[1].shortFlag) return `--${item[0]}\t ${item[1].desc}`;
       return `--${item[0]}, -${item[1].shortFlag}\t ${item[1].desc}`;
     })
     .filter(Boolean)
@@ -23,7 +24,7 @@ export default (flagsConst: IFlags) => {
   });
 
   ui.div({
-    text: '$ lobe-commit  [option] [command]',
+    text: '$ cover-minifier [option] [command]',
     padding: [0, 0, 0, 4],
   });
 
@@ -34,7 +35,7 @@ export default (flagsConst: IFlags) => {
 
   ui.div({
     text: options,
-    width: 800,
+    width: 1000,
     padding: [0, 0, 0, 4],
   });
 

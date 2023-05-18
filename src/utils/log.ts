@@ -49,12 +49,8 @@ class Log {
   done(...msg) {
     this.log(this._getTitle(emoji.done, 'Done'), ...msg);
   }
-  error(e) {
-    const [message, ...stack] = e.stack.split(/\n/);
-    this.log(
-      this._getTitle(emoji.error, 'Error', 'red'),
-      [message, chalk.grey(stack.join('\n'))].join('\n'),
-    );
+  error(...msg) {
+    this.log(this._getTitle(emoji.error, 'Error', 'red'), ...msg);
   }
   boosting(...msg) {
     this.log(this._getTitle(emoji.boosting, 'Boosting', 'magenta'), ...msg);
