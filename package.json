@@ -1,13 +1,81 @@
 {
-  "name": "resize-cover",
-  "version": "1.0.0",
-  "main": "index.js",
+  "name": "sd-webui-cover-minifier",
+  "version": "0.0.0",
+  "description": "a simple node script to resize all kind of models’ cover to speed up extranetwrok showcase render",
+  "keywords": [
+    "stable-diffusion-webui",
+    "extra-networks",
+    "minifier"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/canisminor1990/sd-webui-cover-minifier.git"
+  },
   "license": "MIT",
+  "author": "canisminor1990 <i@canisminor.cc>",
+  "type": "module",
+  "bin": {
+    "cover-minifier": "dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "resize-cover": "node resize-cover.js"
+    "build": "pkgroll --minify && node ./scripts/addShebangs.cjs",
+    "dev": "pkgroll --watch",
+    "lint": "eslint --fix --cache --ext .js,.jsx,.ts,.tsx,.cjs",
+    "prepack": "pnpm build && clean-pkg-json",
+    "prepare": "husky install",
+    "prettier": "prettier -c --write \"**/**\"",
+    "release": "semantic-release",
+    "start": "node ./dist/cli.js",
+    "test": "npm run lint",
+    "type-check": "tsc -p tsconfig-check.json"
+  },
+  "lint-staged": {
+    "*.{md,json}": [
+      "prettier --write --no-error-on-unmatched-pattern"
+    ],
+    "*.{js,jsx,cjs}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{ts,tsx}": [
+      "eslint --fix",
+      "prettier --parser=typescript --write"
+    ]
+  },
+  "dependencies": {
+    "@types/chalk": "^2.2.0",
+    "chalk": "^5.2.0",
+    "cliui": "^8",
+    "meow": "^12",
+    "rimraf": "^4",
+    "sharp": "^0.32"
   },
   "devDependencies": {
-    "rimraf": "^4.4.1",
-    "sharp": "^0.32.0"
+    "@sindresorhus/tsconfig": "^3",
+    "@types/node": "^20",
+    "@umijs/lint": "^4",
+    "clean-pkg-json": "^1",
+    "eslint": "^8",
+    "eslint-import-resolver-alias": "^1",
+    "eslint-import-resolver-typescript": "^3",
+    "husky": "^8",
+    "lint-staged": "^13",
+    "pkgroll": "^1",
+    "prettier": "^2",
+    "prettier-plugin-organize-imports": "^3",
+    "prettier-plugin-packagejson": "^2",
+    "semantic-release": "^21",
+    "semantic-release-config-gitmoji": "^1",
+    "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   }
 }
