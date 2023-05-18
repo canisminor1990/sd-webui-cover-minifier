@@ -16,7 +16,6 @@ package-lock.json
 # misc
 .DS_Store
 .eslintcache
-.husky
 
 # umi
 /src/.umi
@@ -36,4 +35,7 @@ lambda/mock/index.js
 # test
 **/test-output
 config.yml
-
+yarn.lock
+venv
+temp
+.husky/prepare-commit-msg
