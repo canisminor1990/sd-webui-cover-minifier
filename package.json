@@ -62,7 +62,7 @@
     "eslint-import-resolver-alias": "^1",
     "eslint-import-resolver-typescript": "^3",
     "husky": "^8",
-    "lint-staged": "^13",
+    "lint-staged": "^14",
     "pkgroll": "^1",
     "prettier": "^2",
     "prettier-plugin-organize-imports": "^3",
