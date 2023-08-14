@@ -54,7 +54,7 @@
     "sharp": "^0.32"
   },
   "devDependencies": {
-    "@sindresorhus/tsconfig": "^3",
+    "@sindresorhus/tsconfig": "^4",
     "@types/node": "^20",
     "@umijs/lint": "^4",
     "clean-pkg-json": "^1",
